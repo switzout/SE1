@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Character
 {
-    class Class4
+    class SecurityGuard : Monster
     {
+        public SecurityGuard(int h, int a, int d) : base(h, a, d)
+        {
+
+        }
     }
 }

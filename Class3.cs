@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Character
 {
-    class Class3
+    class FinalBoss : Monster
     {
+        public FinalBoss(int h, int a, int d) : base(h, a, d)
+        {
+
+        }
+
     }
 }

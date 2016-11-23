@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace Character
 {
-    class Class2
+    class Monster : Character
     {
+        private int modifier;
+
+        public Monster(int h, int a, int d) : base(h, a, d)
+        {
+
+        }
+
+        public int getModifier()
+        {
+            return modifier;
+        }
+
+        public void setModifier(int m)
+        {
+            modifier = m;
+        }
     }
 }

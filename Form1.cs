@@ -1,5 +1,4 @@
-﻿
-namespace Character
+﻿namespace Character
 {
     class Character
     {
@@ -9,9 +8,40 @@ namespace Character
 
         public Character(int h, int a, int d)
         {
-            
+            health = h;
+            attack = a;
+            defense = d;
         }
 
-        
+        public int getHealth()
+        {
+            return health;
+        }
+
+        public int getAttack()
+        {
+            return attack;
+        }
+
+        public int getDefense()
+        {
+            return defense;
+        }
+
+        public void setHealth(int h)
+        {
+            health = h;
+        }
+
+        public void setAttack(int a)
+        {
+            attack = a;
+        }
+
+        public void setDefense(int d)
+        {
+            defense = d;
+        }
     }
+
 }
