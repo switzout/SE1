@@ -13,6 +13,7 @@ namespace Character
         private int locationX;
         private int locationY;
         private int level;
+        private int distance = 0;
 
         public PlayerCharacter(int h, int a, int d) : base(h, a, d)
         {
@@ -22,6 +23,11 @@ namespace Character
         public int getStatPoints()
         {
             return statPoints;
+        }
+
+        public int getDistance()
+        {
+            return distance;
         }
 
         public Boolean getItem()
@@ -69,6 +75,19 @@ namespace Character
             level = l;
         }
 
+        public void setDistance(int d)
+        {
+            distance = distance + d;
+            //add if condition from battle to set distance to 0
+        }
 
+        public void attackMonster(Monster m)
+        {
+            if (m.getHealth()>0)
+            {
+                if (attack > m.getDefense())
+                    m.setHealth(attack-m.getDefense());
+            }
+        }
     }
 }

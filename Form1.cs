@@ -42,6 +42,15 @@
         {
             defense = d;
         }
+
+        public void attack(object c)
+        {
+            if (c.getHealth() > 0)
+            {
+                if (attack > c.getDefense())
+                    c.setHealth(attack - c.getDefense());
+            }
+        }
     }
 
 }

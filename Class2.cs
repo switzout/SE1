@@ -24,5 +24,13 @@ namespace Character
         {
             modifier = m;
         }
+
+        public void attackPlayer(PlayerCharacter pc)
+        {
+            if (attack > pc.getDefense())
+            {
+                pc.setHealth(attack - pc.getDefense()); 
+            }
+        }
     }
 }
