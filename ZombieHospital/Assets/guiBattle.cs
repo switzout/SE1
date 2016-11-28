@@ -1,7 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using UnityEditor;
-using UnityEngine.SceneManagement;
 
 
 class guiBattle : MonoBehaviour
@@ -25,7 +23,6 @@ class guiBattle : MonoBehaviour
     Rect attackTextRect = new Rect(Screen.width - 550, Screen.height - 100, 200, 100);
     Rect attackRect = new Rect(Screen.width - 325, Screen.height - 125, 100, 75);
     Rect fleeRect = new Rect(Screen.width - 200, Screen.height - 125, 100, 75);
-    Texture2D texture = new Texture2D(100, 100);
     Camera[] cams = new Camera[2];
 
     public void AttackMonster()
