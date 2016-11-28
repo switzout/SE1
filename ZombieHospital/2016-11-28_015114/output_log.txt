@@ -1,0 +1,137 @@
+Initialize engine version: 5.4.0f3 (a6d8d714de6f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6810)
+    Vendor:   ATI
+    VRAM:     2027 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.164 seconds
+Platform assembly: C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Crash!!!
+SymInit: Symbol-SearchPath: '.;C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital;C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital;C:\Windows;C:\Windows\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 530, UserName: 'Chris'
+OS-Version: 6.3.9600 () 0x300-0x1
+C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test.exe:test.exe (008C0000), size: 18558976 (result: 0), SymType: '-exported-', PDB: 'C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test.exe', fileVersion: 5.4.0.55511
+C:\Windows\SYSTEM32\ntdll.dll:ntdll.dll (76F20000), size: 1503232 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\ntdll.dll', fileVersion: 6.3.9600.18233
+C:\Windows\SYSTEM32\KERNEL32.DLL:KERNEL32.DLL (762D0000), size: 1310720 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\KERNEL32.DLL', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\KERNELBASE.dll:KERNELBASE.dll (767D0000), size: 880640 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\KERNELBASE.dll', fileVersion: 6.3.9600.18202
+C:\Windows\SYSTEM32\HID.DLL:HID.DLL (68E20000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\HID.DLL', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\GDI32.dll:GDI32.dll (768B0000), size: 1110016 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\GDI32.dll', fileVersion: 6.3.9600.18344
+C:\Windows\SYSTEM32\USER32.dll:USER32.dll (76CA0000), size: 1388544 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\USER32.dll', fileVersion: 6.3.9600.18439
+C:\Windows\SYSTEM32\ADVAPI32.dll:ADVAPI32.dll (76430000), size: 507904 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\ADVAPI32.dll', fileVersion: 6.3.9600.18155
+C:\Windows\SYSTEM32\WS2_32.dll:WS2_32.dll (76640000), size: 323584 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\WS2_32.dll', fileVersion: 6.3.9600.18340
+C:\Windows\SYSTEM32\VERSION.dll:VERSION.dll (74590000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\VERSION.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\ole32.dll:ole32.dll (75F70000), size: 1216512 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\ole32.dll', fileVersion: 6.3.9600.18508
+C:\Windows\SYSTEM32\SHLWAPI.dll:SHLWAPI.dll (76E00000), size: 282624 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\SHLWAPI.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\SHELL32.dll:SHELL32.dll (74A70000), size: 19640320 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\SHELL32.dll', fileVersion: 6.3.9600.18458
+C:\Windows\SYSTEM32\OPENGL32.dll:OPENGL32.dll (68CA0000), size: 909312 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\OPENGL32.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\WINMM.dll:WINMM.dll (73D00000), size: 143360 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\WINMM.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\OLEAUT32.dll:OLEAUT32.dll (76720000), size: 618496 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\OLEAUT32.dll', fileVersion: 6.3.9600.18434
+C:\Windows\SYSTEM32\IMM32.dll:IMM32.dll (75F00000), size: 159744 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\IMM32.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\DNSAPI.dll:DNSAPI.dll (6CE70000), size: 516096 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\DNSAPI.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (745A0000), size: 131072 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\IPHLPAPI.DLL', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\WINHTTP.dll:WINHTTP.dll (744D0000), size: 651264 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\WINHTTP.dll', fileVersion: 6.3.9600.18340
+C:\Windows\SYSTEM32\msvcrt.dll:msvcrt.dll (74940000), size: 798720 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\msvcrt.dll', fileVersion: 7.0.9600.17415
+C:\Windows\SYSTEM32\sechost.dll:sechost.dll (74A20000), size: 266240 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\sechost.dll', fileVersion: 6.3.9600.17734
+C:\Windows\SYSTEM32\RPCRT4.dll:RPCRT4.dll (76BE0000), size: 761856 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\RPCRT4.dll', fileVersion: 6.3.9600.18292
+C:\Windows\SYSTEM32\NSI.dll:NSI.dll (74930000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\NSI.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\combase.dll:combase.dll (74710000), size: 1560576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\combase.dll', fileVersion: 6.3.9600.18202
+C:\Windows\SYSTEM32\GLU32.dll:GLU32.dll (507C0000), size: 151552 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\GLU32.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\DDRAW.dll:DDRAW.dll (68A00000), size: 966656 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\DDRAW.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\WINMMBASE.dll:WINMMBASE.dll (72A90000), size: 143360 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\WINMMBASE.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\MSCTF.dll:MSCTF.dll (75DE0000), size: 1122304 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\MSCTF.dll', fileVersion: 6.3.9600.18514
+C:\Windows\SYSTEM32\WINNSI.DLL:WINNSI.DLL (74470000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\WINNSI.DLL', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\SspiCli.dll:SspiCli.dll (76410000), size: 122880 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\SspiCli.dll', fileVersion: 6.3.9600.18454
+C:\Windows\SYSTEM32\DCIMAN32.dll:DCIMAN32.dll (71EB0000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\DCIMAN32.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\cfgmgr32.dll:cfgmgr32.dll (74890000), size: 245760 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\cfgmgr32.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\DEVOBJ.dll:DEVOBJ.dll (72A60000), size: 135168 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\DEVOBJ.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\CRYPTBASE.dll:CRYPTBASE.dll (74700000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\CRYPTBASE.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\bcryptPrimitives.dll:bcryptPrimitives.dll (746A0000), size: 344064 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\bcryptPrimitives.dll', fileVersion: 6.3.9600.18344
+C:\Windows\SYSTEM32\kernel.appcore.dll:kernel.appcore.dll (745E0000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\kernel.appcore.dll', fileVersion: 6.3.9600.17415
+C:\Windows\system32\uxtheme.dll:uxtheme.dll (71A40000), size: 970752 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\uxtheme.dll', fileVersion: 6.3.9600.17415
+C:\PROGRA~2\RAPTRI~1\Raptr\ltc_help32-116716.dll:ltc_help32-116716.dll (0F140000), size: 155648 (result: 0), SymType: '-exported-', PDB: 'C:\PROGRA~2\RAPTRI~1\Raptr\ltc_help32-116716.dll', fileVersion: 1.0.0.1
+C:\Windows\SYSTEM32\WINTRUST.dll:WINTRUST.dll (75F30000), size: 249856 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\WINTRUST.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\CRYPT32.dll:CRYPT32.dll (760A0000), size: 1605632 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\CRYPT32.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\MSASN1.dll:MSASN1.dll (75D40000), size: 57344 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\MSASN1.dll', fileVersion: 6.3.9600.17415
+C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test_Data\Mono\mono.dll:mono.dll (10000000), size: 2293760 (result: 0), SymType: '-exported-', PDB: 'C:\Users\Chris\Documents\School\UWF\SE1\ZombieHospital\test_Data\Mono\mono.dll', fileVersion: 1.0.0.1
+C:\Windows\SYSTEM32\PSAPI.DLL:PSAPI.DLL (75D30000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\PSAPI.DLL', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\MSWSOCK.dll:MSWSOCK.dll (72980000), size: 307200 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\MSWSOCK.dll', fileVersion: 6.3.9600.18340
+C:\Windows\SYSTEM32\shcore.dll:shcore.dll (743D0000), size: 569344 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\shcore.dll', fileVersion: 6.3.9600.17415
+C:\Windows\system32\dwmapi.dll:dwmapi.dll (71E70000), size: 106496 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dwmapi.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\d3d11.dll:d3d11.dll (61D60000), size: 1937408 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\d3d11.dll', fileVersion: 6.3.9600.18437
+C:\Windows\SYSTEM32\dxgi.dll:dxgi.dll (61CF0000), size: 430080 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\dxgi.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\aticfx32.dll:aticfx32.dll (68EF0000), size: 1253376 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\aticfx32.dll', fileVersion: 8.17.10.1452
+C:\Windows\SYSTEM32\atiuxpag.dll:atiuxpag.dll (5A9A0000), size: 143360 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\atiuxpag.dll', fileVersion: 8.14.1.6505
+C:\Windows\SYSTEM32\atidxx32.dll:atidxx32.dll (59B30000), size: 9547776 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\atidxx32.dll', fileVersion: 8.17.10.661
+C:\Windows\SYSTEM32\clbcatq.dll:clbcatq.dll (76690000), size: 577536 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\clbcatq.dll', fileVersion: 2001.12.10530.17415
+C:\Windows\System32\MMDevApi.dll:MMDevApi.dll (61A10000), size: 339968 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\MMDevApi.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\wdmaud.drv:wdmaud.drv (646A0000), size: 221184 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\wdmaud.drv', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\ksuser.dll:ksuser.dll (5EDA0000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\ksuser.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\AVRT.dll:AVRT.dll (5E930000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\AVRT.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\AUDIOSES.DLL:AUDIOSES.DLL (61A70000), size: 393216 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\AUDIOSES.DLL', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\powrprof.dll:powrprof.dll (64F40000), size: 262144 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\powrprof.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\msacm32.drv:msacm32.drv (6AFC0000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\msacm32.drv', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\MSACM32.dll:MSACM32.dll (647B0000), size: 94208 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\MSACM32.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\midimap.dll:midimap.dll (6A8F0000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\midimap.dll', fileVersion: 6.3.9600.17415
+C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17810_none_a9edf09f013934e0\comctl32.dll:comctl32.dll (71B30000), size: 2121728 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17810_none_a9edf09f013934e0\comctl32.dll', fileVersion: 6.10.9600.17810
+C:\Windows\SYSTEM32\xinput1_3.dll:xinput1_3.dll (00400000), size: 90112 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\xinput1_3.dll', fileVersion: 9.18.944.0
+C:\Windows\SYSTEM32\SETUPAPI.dll:SETUPAPI.dll (769C0000), size: 1773568 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\SETUPAPI.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (741F0000), size: 102400 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\CRYPTSP.dll', fileVersion: 6.3.9600.17415
+C:\Windows\system32\rsaenh.dll:rsaenh.dll (74010000), size: 196608 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\rsaenh.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\bcrypt.dll:bcrypt.dll (73FF0000), size: 122880 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\bcrypt.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\imagehlp.dll:imagehlp.dll (76620000), size: 81920 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\imagehlp.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\ncrypt.dll:ncrypt.dll (69D90000), size: 131072 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\ncrypt.dll', fileVersion: 6.3.9600.18298
+C:\Windows\SYSTEM32\NTASN1.dll:NTASN1.dll (69D60000), size: 167936 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\SYSTEM32\NTASN1.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\gpapi.dll:gpapi.dll (69D40000), size: 131072 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\gpapi.dll', fileVersion: 6.3.9600.18339
+C:\Windows\SYSTEM32\cryptnet.dll:cryptnet.dll (69D10000), size: 155648 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\cryptnet.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\WLDAP32.dll:WLDAP32.dll (748D0000), size: 344064 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\WLDAP32.dll', fileVersion: 6.3.9600.17415
+C:\Windows\SYSTEM32\profapi.dll:profapi.dll (74460000), size: 61440 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\SYSTEM32\profapi.dll', fileVersion: 6.3.9600.17415
+C:\PROGRA~2\RAPTRI~1\Raptr\ltc_game32-116716.dll:ltc_game32-116716.dll (643A0000), size: 1937408 (result: 0), SymType: '-exported-', PDB: 'C:\PROGRA~2\RAPTRI~1\Raptr\ltc_game32-116716.dll', fileVersion: 1.0.0.1
+C:\Windows\SYSTEM32\dbghelp.dll:dbghelp.dll (71860000), size: 1314816 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SYSTEM32\dbghelp.dll', fileVersion: 6.3.9600.17415
+
+========== OUTPUTING STACK TRACE ==================
+
+0x00A68B40 (test) Texture2D::UploadTexture
+0x00A6882C (test) Texture2D::AwakeFromLoad
+0x00BAEEBB (test) LevelGameManager::GetClassIDStatic
+0x056A2915 (Mono JIT Code) (wrapper managed-to-native) UnityEngine.Texture2D:Internal_Create (UnityEngine.Texture2D,int,int,UnityEngine.TextureFormat,bool,bool,intptr)
+0x056A2875 (Mono JIT Code) UnityEngine.Texture2D:.ctor (int,int)
+0x056A2733 (Mono JIT Code) guiBattle:.ctor ()
+0x0569E571 (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void__this__ (object,intptr,intptr,intptr)
+0x100F1592 (mono) mono_set_defaults
+0x1005D984 (mono) mono_runtime_invoke
+0x00A798BB (test) mono_array_length_safe_wrapper
+0x00A8B435 (test) scripting_gchandle_get_target
+0x00A7E362 (test) IIMGUI::IIMGUI
+0x00B2BE30 (test) RegisterAllowNameConversionInDerivedTypes
+0x00B2D5FD (test) RegisterAllowNameConversionInDerivedTypes
+0x00B2E348 (test) RegisterAllowNameConversionInDerivedTypes
+0x008E9D18 (test) Object::StaticDestroy
+0x008ED6B0 (test) Unity::Component::CheckConsistency
+0x008EE989 (test) GameObject::SetComponentAtIndexInternal
+0x008EF1FC (test) GameObject::Transfer<StreamedBinaryRead<0> >
+0x00B3474C (test) RegisterAllowNameConversionInDerivedTypes
+0x00B2F84B (test) RegisterAllowNameConversionInDerivedTypes
+0x00B0DB44 (test) CallbackArray3<int const ,AwakeFromLoadQueue &,enum RuntimeSceneManager::LoadingMode>::Invoke
+0x00B0CDFC (test) Thread::GetPriority
+0x00B0CE7B (test) Thread::GetPriority
+0x00B51C5F (test) Thread::RunThreadWrapper
+0x762E7C04 (KERNEL32) BaseThreadInitThunk
+0x76F7AB8F (ntdll) RtlInitializeExceptionChain
+
+========== END OF STACKTRACE ===========
+
+**** Crash! ****

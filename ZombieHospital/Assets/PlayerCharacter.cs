@@ -7,94 +7,75 @@ using System.Threading;
 
 //namespace Character
 //{
-    class PlayerCharacter : MonoBehaviour
+class PlayerCharacter : MonoBehaviour
 {
-        private int statPoints;
-        private Boolean item = false;
-        private int locationX;
-        private int locationY;
-        private int level;
-        private int distance = 0;
-        static Vector3 savedPosition;
+    private int statPoints;
+    private Boolean item = false;
+    private int level;
 
-        void Awake()
-        {
-            DontDestroyOnLoad(transform.gameObject);    
-        }    
-
-        public PlayerCharacter(int h, int a, int d)
-        { 
-
-        }
-
-        public int getStatPoints()
-        {
-            return statPoints;
-        }
-
-        public int getDistance()
-        {
-            return distance;
-        }
-
-        public Boolean getItem()
-        {
-            return item;
-        }
-
-        public int getLocationX()
-        {
-            return locationX;
-        }
-
-        public int getLocationY()
-        {
-            return locationY;
-        }
-
-        public int getLevel()
-        {
-            return level;
-        }
-
-        public void setStatPoints(int s)
-        {
-            statPoints = s;
-        }
-
-        public void setItem(Boolean i)
-        {
-            item = i;
-        }
-
-        public void setLocationX(int x)
-        {
-            locationX = x;
-        }
-
-        public void setLocationY(int y)
-        {
-            locationY = y;
-        }
-
-        public void setLevel(int l)
-        {
-            level = l;
-        }
-
-        public void setDistance(int d)
-        {
-            distance = distance + d;
-            //add if condition from battle to set distance to 0
-        }
-
-      /*  public void attackMonster(Monster m)
-        {
-            if (m.getHealth()>0)
-            {
-                if (attack > m.getDefense())
-                    m.setHealth(attack-m.getDefense());
-            }
-        }*/
+    public static int attack = 2;
+    public static int defense = 0;
+    public static int health = 10;
+   
+    public static void setDefense(int d)
+    {
+        defense = d;
     }
+
+    public static void setAttack(int a)
+    {
+        attack = a;
+    }
+
+    public static void setHealth(int h)
+    {
+        health = h;
+    }
+
+    public static int getAttack()
+    {
+        return attack;
+    }
+
+    public static int getDefense()
+    {
+        return defense;
+    }
+
+    public static int getHealth()
+    {
+        return health;
+    }
+
+    public int getStatPoints()
+    {
+        return statPoints;
+    }
+
+    public Boolean getItem()
+    {
+        return item;
+    }
+
+    public int getLevel()
+    {
+        return level;
+    }
+
+    public void setStatPoints(int s)
+    {
+        statPoints = s;
+    }
+
+    public void setItem(Boolean i)
+    {
+        item = i;
+    }
+
+    public void setLevel(int l)
+    {
+        level = l;
+    }
+    
+}
 //}

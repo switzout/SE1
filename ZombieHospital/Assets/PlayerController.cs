@@ -11,10 +11,12 @@ public class PlayerController : MonoBehaviour {
 		rb2d = GetComponent<Rigidbody2D> ();
 	}
 
-    void OnCollisionEnter()
+    void OnCollisionEnter2D()
     {
         rb2d.isKinematic = true;
-        rb2d.velocity = Vector2.zero;
+        Vector2 position = this.transform.position;
+
+        rb2d.isKinematic = false;
     }
 
 	void FixedUpdate()
