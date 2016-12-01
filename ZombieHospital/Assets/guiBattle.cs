@@ -49,7 +49,7 @@ class guiBattle : MonoBehaviour
                 damage = Monster.getAttack() - PlayerCharacter.getDefense();
                 newHealth = PlayerCharacter.getHealth() - damage;
                 PlayerCharacter.setHealth(newHealth);
-                pcHealth = "Enemy Health: " + PlayerCharacter.getHealth();
+                pcHealth = "Player Health: " + PlayerCharacter.getHealth();
                 index = 2;
             }
         }
@@ -62,7 +62,9 @@ class guiBattle : MonoBehaviour
         cams[0].depth = Camera.main.depth + 1;
         showText = false;
         Monster.setHealth(10);
+        enemyHealth = "Enemy Health: " + Monster.getHealth();
         PlayerCharacter.setHealth(10);
+        pcHealth = "Player Health: " + PlayerCharacter.getHealth();
     }
 
     public void Item()
@@ -97,7 +99,7 @@ class guiBattle : MonoBehaviour
             enemyHealth = "Enemy Health: " + Monster.getHealth();
 
             PlayerCharacter.setHealth(10);
-            pcHealth = "Enemy Health: " + PlayerCharacter.getHealth();
+            pcHealth = "Player Health: " + PlayerCharacter.getHealth();
         }
     }
 
@@ -115,11 +117,22 @@ class guiBattle : MonoBehaviour
             GUI.Label(enemyRect, enemyHealth, HUDStyle);
             GUI.Label(pcRect, pcHealth, HUDStyle);
 
+            if (PlayerCharacter.getItem())
+            {
+                if(GUI.Button(fleeRect, "Use Item", buttonStyle))
+                {
+                //    UseItem();
+                }
+            }
+
             if (GUI.Button(attackRect, "Attack", buttonStyle))
             {
                 AttackMonster();
                 if (Monster.getHealth() > 0)
+                {
+                    
                     AttackPlayer();
+                }
             }
 
             if(GUI.Button(fleeRect, "Flee", buttonStyle))

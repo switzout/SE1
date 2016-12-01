@@ -9,13 +9,12 @@ using System.Threading;
 //{
 class PlayerCharacter : MonoBehaviour
 {
-    private int statPoints;
-    private Boolean item = false;
-    private int level;
-
-    public static int attack = 2;
-    public static int defense = 0;
-    public static int health = 10;
+    private static int statPoints;
+    private static Boolean item = false;
+    private static int level;
+    private static int attack = 2;
+    private static int defense = 0;
+    private static int health = 10;
    
     public static void setDefense(int d)
     {
@@ -52,7 +51,7 @@ class PlayerCharacter : MonoBehaviour
         return statPoints;
     }
 
-    public Boolean getItem()
+    public static Boolean getItem()
     {
         return item;
     }
