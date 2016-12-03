@@ -13,10 +13,7 @@ public class PlayerController : MonoBehaviour {
 
     void OnCollisionEnter2D()
     {
-        rb2d.isKinematic = true;
-        Vector2 position = this.transform.position;
-
-        rb2d.isKinematic = false;
+        
     }
 
 	void FixedUpdate()

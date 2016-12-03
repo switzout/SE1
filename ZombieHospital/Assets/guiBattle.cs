@@ -18,11 +18,12 @@ class guiBattle : MonoBehaviour
     int newHealth;
     int index;
 
-    Rect enemyRect = new Rect(Screen.width - 420, 20, 120, 50);
-    Rect pcRect = new Rect(400, Screen.height - 50, 120, 70);
+    Rect enemyRect = new Rect(Screen.width - 650, 150, 120, 50);
+    Rect pcRect = new Rect(550, Screen.height - 250, 120, 70);
     Rect attackTextRect = new Rect(Screen.width - 550, Screen.height - 100, 200, 100);
-    Rect attackRect = new Rect(Screen.width - 325, Screen.height - 125, 100, 75);
-    Rect fleeRect = new Rect(Screen.width - 200, Screen.height - 125, 100, 75);
+    Rect attackRect = new Rect(Screen.width - 600, Screen.height - 200, 100, 75);
+    Rect fleeRect = new Rect(Screen.width - 475, Screen.height - 200, 100, 75);
+    Rect itemRect = new Rect(Screen.width - 350, Screen.height - 200, 100, 75);
     Camera[] cams = new Camera[2];
 
     public void AttackMonster()
@@ -67,9 +68,10 @@ class guiBattle : MonoBehaviour
         pcHealth = "Player Health: " + PlayerCharacter.getHealth();
     }
 
-    public void Item()
+    public void UseItem()
     {
-
+        Monster.setHealth(0);
+        PlayerCharacter.setItem(false);
     }
 
     void Start()
@@ -119,9 +121,9 @@ class guiBattle : MonoBehaviour
 
             if (PlayerCharacter.getItem())
             {
-                if(GUI.Button(fleeRect, "Use Item", buttonStyle))
+                if(GUI.Button(itemRect, "Use Item", buttonStyle))
                 {
-                //    UseItem();
+                    UseItem();
                 }
             }
 

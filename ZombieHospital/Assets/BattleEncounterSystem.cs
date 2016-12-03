@@ -10,6 +10,14 @@ public class BattleEncounterSystem : MonoBehaviour {
     int encounter;
     static System.Random battle;
     GameObject player;
+    GameObject miniBoss;
+    GameObject mainBoss;
+    GameObject battleCam;
+    GameObject gunBattleCam;
+    GameObject miniBossCam;
+    GameObject gunMiniBossCam;
+    GameObject bossCam;
+    GameObject gunBossCam;
     Camera[] cams = new Camera[2];
     Vector2 initPos;
     Vector2 nextPos;
@@ -17,20 +25,19 @@ public class BattleEncounterSystem : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Doug");
+        miniBoss = GameObject.Find("MiniBoss");
+        mainBoss = GameObject.Find("MainBoss");
+        battleCam = GameObject.Find("BattleScene1Cam");
+        gunBattleCam = GameObject.Find("GunBattleCam");
         counter = 0;
         battle = new System.Random();
-        encounter = battle.Next(10, 20);
+        encounter = battle.Next(20, 50);
         initPos = player.transform.position;
         Camera.GetAllCameras(cams);
         print(cams[0].tag);
         print(cams[1].tag);
         cams[1].enabled = false;
         cams[0].depth = Camera.main.depth + 1;
-    }
-	
-    void Update()
-    {
-
     }
 
     void FixedUpdate()
@@ -40,9 +47,6 @@ public class BattleEncounterSystem : MonoBehaviour {
 
 	void LateUpdate () {
         nextPos = player.transform.position;
-       
-      //  encounter = battle.Next(6, 20);
-        
 
         if(initPos != nextPos)
         {
@@ -52,10 +56,22 @@ public class BattleEncounterSystem : MonoBehaviour {
         if (counter >= encounter)
         {
             counter = 0;
-            cams[0].enabled = false;
-            cams[1].enabled = true;
-            cams[1].depth = Camera.main.depth + 1;
-            encounter = battle.Next(5, 20);
+            if (PlayerCharacter.getItem())
+            {
+                cams[0].enabled = false;
+                cams[1].enabled = true;
+                cams[1].transform.position = gunBattleCam.transform.position;
+                cams[1].depth = Camera.main.depth + 1;
+                encounter = battle.Next(20, 50);
+            }
+            else
+            {
+                cams[0].enabled = false;
+                cams[1].enabled = true;
+                cams[1].transform.position = battleCam.transform.position;
+                cams[1].depth = Camera.main.depth + 1;
+                encounter = battle.Next(20, 50);
+            }
         }
         initPos = player.transform.position;
 	}
