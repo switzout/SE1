@@ -11,11 +11,6 @@ public class PlayerController : MonoBehaviour {
 		rb2d = GetComponent<Rigidbody2D> ();
 	}
 
-    void OnCollisionEnter2D()
-    {
-        
-    }
-
 	void FixedUpdate()
 	{
         if (Input.GetKeyDown(KeyCode.LeftArrow))

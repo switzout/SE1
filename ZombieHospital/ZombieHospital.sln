@@ -1,7 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{383EE0A4-FC59-1C94-BD08-28D781E84F9E}") = "ZombieHospital", "Assembly-CSharp.csproj", "{D3CDB522-246D-8888-B380-28F063CCF203}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZombieHospital.CSharp", "ZombieHospital.CSharp.csproj", "{A2095774-895A-765A-3029-BAD129BC3E47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D3CDB522-246D-8888-B380-28F063CCF203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3CDB522-246D-8888-B380-28F063CCF203}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3CDB522-246D-8888-B380-28F063CCF203}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3CDB522-246D-8888-B380-28F063CCF203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2095774-895A-765A-3029-BAD129BC3E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2095774-895A-765A-3029-BAD129BC3E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2095774-895A-765A-3029-BAD129BC3E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2095774-895A-765A-3029-BAD129BC3E47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

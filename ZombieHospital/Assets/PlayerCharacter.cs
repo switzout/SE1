@@ -5,8 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 
-//namespace Character
-//{
 class PlayerCharacter : MonoBehaviour
 {
     private static int statPoints;
@@ -15,6 +13,7 @@ class PlayerCharacter : MonoBehaviour
     private static int attack = 2;
     private static int defense = 0;
     private static int health = 10;
+    private static int maxHealth = health;
    
     public static void setDefense(int d)
     {
@@ -29,6 +28,11 @@ class PlayerCharacter : MonoBehaviour
     public static void setHealth(int h)
     {
         health = h;
+    }
+
+    public static void setMaxHealth(int h)
+    {
+        maxHealth = h;
     }
 
     public static void setItem(Boolean haveItem)
@@ -51,30 +55,14 @@ class PlayerCharacter : MonoBehaviour
         return health;
     }
 
-    public int getStatPoints()
+    public static int getMaxHealth()
     {
-        return statPoints;
+        return maxHealth;
     }
 
     public static Boolean getItem()
     {
         return item;
     }
-
-    public int getLevel()
-    {
-        return level;
-    }
-
-    public void setStatPoints(int s)
-    {
-        statPoints = s;
-    }
-
-    public void setLevel(int l)
-    {
-        level = l;
-    }
     
 }
-//}
