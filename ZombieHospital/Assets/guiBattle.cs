@@ -4,7 +4,7 @@ using UnityEngine;
 
 class guiBattle : MonoBehaviour
 {
-
+    public static Boolean wonBattle;
     String monsterHealth = "";
     String miniBossHealth = "";
     String bossHealth = "";
@@ -115,13 +115,14 @@ class guiBattle : MonoBehaviour
         cams[0].enabled = true;
         cams[0].depth = Camera.main.depth + 1;
         showText = false;
+        showMiniBossText = false;
         Monster.setHealth(10);
         if(SecurityCharacter.getHealth() > 0)
         {
             SecurityCharacter.setHealth(25);
         }
         monsterHealth = "Enemy Health: " + Monster.getHealth();
-        PlayerCharacter.setHealth(10);
+        PlayerCharacter.setHealth(PlayerCharacter.getMaxHealth());
         pcHealth = "Player Health: " + PlayerCharacter.getHealth();
     }
 
@@ -180,6 +181,7 @@ class guiBattle : MonoBehaviour
             
             cams[0].transform.position = mainMenu.transform.position;
             showText = false;
+            wonBattle = false;
             showMiniBossText = false;
             showBossText = false;
             Monster.setHealth(10);
@@ -195,10 +197,11 @@ class guiBattle : MonoBehaviour
             cams[0].enabled = true;
             cams[0].depth = Camera.main.depth + 1;
             showText = false;
+            wonBattle = true;
             Monster.setHealth(10);
             monsterHealth = "Enemy Health: " + Monster.getHealth();
 
-            PlayerCharacter.setHealth(10);
+            PlayerCharacter.setHealth(PlayerCharacter.getMaxHealth());
             pcHealth = "Player Health: " + PlayerCharacter.getHealth();
         }
         else if(SecurityCharacter.getHealth() <= 0 && showMiniBossText)
@@ -207,8 +210,10 @@ class guiBattle : MonoBehaviour
             cams[0].enabled = true;
             cams[0].depth = Camera.main.depth + 1;
             showMiniBossText = false;
+            wonBattle = true;
 
-            PlayerCharacter.setHealth(10);
+            PlayerCharacter.setHealth(PlayerCharacter.getMaxHealth());
+            PlayerCharacter.setItem(true);
             pcHealth = "Player Health: " + PlayerCharacter.getHealth();
         }
         else if(BossCharacter.getHealth() <= 0 && showBossText)
@@ -217,8 +222,9 @@ class guiBattle : MonoBehaviour
             cams[0].enabled = true;
             cams[0].depth = Camera.main.depth + 1;
             showBossText = false;
+            wonBattle = true;
 
-            PlayerCharacter.setHealth(10);
+            PlayerCharacter.setHealth(PlayerCharacter.getMaxHealth());
             pcHealth = "Player Health: " + PlayerCharacter.getHealth();
         }
     }

@@ -14,6 +14,13 @@ class Monster : MonoBehaviour
     private static int health = 10;
     private static int defense = 0;
     
+    public Monster(int a, int h, int d)
+    {
+        attack = a;
+        health = h;
+        defense = d;
+    }
+
     public static void setDefense(int d)
     {
         defense = d;
