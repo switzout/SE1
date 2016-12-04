@@ -7,6 +7,8 @@ public class MainScreen : MonoBehaviour {
 
     GameObject floorCam;
     GameObject menuCam;
+    GameObject spawn;
+    GameObject player;
 
     Camera mainCam;
 
@@ -20,6 +22,8 @@ public class MainScreen : MonoBehaviour {
     void Start () {
         floorCam = GameObject.Find("FloorCamera");
         menuCam = GameObject.Find("TitleCam");
+        spawn = GameObject.Find("Respawn");
+        player = GameObject.Find("Doug");
         mainCam = Camera.main;
         mainCam.transform.position = menuCam.transform.position;
         startText = true;
@@ -46,6 +50,7 @@ public class MainScreen : MonoBehaviour {
                 startText = false;
                 onMenu = false;
                 LevelChange.setLevel(1);
+                player.transform.position = spawn.transform.position;
                 PlayerCharacter.setMaxHealth(10);
                 PlayerCharacter.setHealth(10);
                 PlayerCharacter.setAttack(2);

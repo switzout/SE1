@@ -37,8 +37,6 @@ public class BattleEncounterSystem : MonoBehaviour {
         encounter = battle.Next(20, 50);
         initPos = player.transform.position;
         Camera.GetAllCameras(cams);
-        print(cams[0].tag);
-        print(cams[1].tag);
         cams[1].enabled = false;
         cams[0].depth = Camera.main.depth + 1;
     }

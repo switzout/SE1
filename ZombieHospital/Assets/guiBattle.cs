@@ -78,6 +78,10 @@ class guiBattle : MonoBehaviour
                 pcHealth = "Player Health: " + PlayerCharacter.getHealth();
             }
         }
+        else
+        {
+            PlayerCharacter.setHealth(0);
+        }
     }
 
     public void MiniBossAttack()
@@ -91,6 +95,10 @@ class guiBattle : MonoBehaviour
                 PlayerCharacter.setHealth(newHealth);
                 pcHealth = "Player Health: " + PlayerCharacter.getHealth();
             }
+        }
+        else
+        {
+            PlayerCharacter.setHealth(0);
         }
     }
 
@@ -106,6 +114,10 @@ class guiBattle : MonoBehaviour
                 pcHealth = "Player Health: " + PlayerCharacter.getHealth();
             }
         }
+        else
+        {
+            PlayerCharacter.setHealth(0);
+        }
     }
 
 
@@ -119,7 +131,7 @@ class guiBattle : MonoBehaviour
         Monster.setHealth(10);
         if(SecurityCharacter.getHealth() > 0)
         {
-            SecurityCharacter.setHealth(25);
+            SecurityCharacter.setHealth(20);
         }
         monsterHealth = "Enemy Health: " + Monster.getHealth();
         PlayerCharacter.setHealth(PlayerCharacter.getMaxHealth());
@@ -175,6 +187,8 @@ class guiBattle : MonoBehaviour
         
         if(PlayerCharacter.getHealth() <= 0)
         {
+
+            MainScreen.onMenu = true;
             cams[1].enabled = false;
             cams[0].enabled = true;
             cams[0].depth = Camera.main.depth + 1;
@@ -221,8 +235,10 @@ class guiBattle : MonoBehaviour
             cams[1].enabled = false;
             cams[0].enabled = true;
             cams[0].depth = Camera.main.depth + 1;
+            cams[0].transform.position = mainMenu.transform.position;
             showBossText = false;
-            wonBattle = true;
+            wonBattle = false;
+            MainScreen.onMenu = true;
 
             PlayerCharacter.setHealth(PlayerCharacter.getMaxHealth());
             pcHealth = "Player Health: " + PlayerCharacter.getHealth();
@@ -255,8 +271,7 @@ class guiBattle : MonoBehaviour
             {
                 PlayerAttack();
                 if (Monster.getHealth() > 0)
-                {
-                    
+                {                    
                     MonsterAttack();
                 }
             }

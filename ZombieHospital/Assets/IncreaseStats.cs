@@ -54,7 +54,7 @@ public class IncreaseStats : MonoBehaviour {
 
         if(points <= 0 && !MainScreen.onMenu)
         {
-           // print(LevelChange.getLevel() - 1);
+           
             Camera.main.transform.position = levels[LevelChange.getLevel() - 1].transform.position;
         }
 	}

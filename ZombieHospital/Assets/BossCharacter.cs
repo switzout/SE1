@@ -40,9 +40,9 @@ public class BossCharacter : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        setHealth(30);
-        setDefense(10);
-        setAttack(8);
+        health = 30;
+        defense = 10;
+        attack = 8;
         this.GetComponent<Collider2D>().enabled = true;
         this.GetComponent<SpriteRenderer>().enabled = true;
     }
