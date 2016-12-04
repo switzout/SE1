@@ -8,7 +8,7 @@ using System.Threading;
 class PlayerCharacter : MonoBehaviour
 {
     private static int statPoints;
-    private static Boolean item = true;
+    private static Boolean item = false;
     private static int level;
     private static int attack = 2;
     private static int defense = 0;

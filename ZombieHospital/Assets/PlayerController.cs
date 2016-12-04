@@ -13,25 +13,25 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             Vector2 position = this.transform.position;
             position.x -= movePos;
             this.transform.position = position;
         }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             Vector2 position = this.transform.position;
             position.x += movePos;
             this.transform.position = position;
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             Vector2 position = this.transform.position;
             position.y += movePos;
             this.transform.position = position;
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             Vector2 position = this.transform.position;
             position.y -= movePos;

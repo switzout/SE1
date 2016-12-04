@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SecurityCharacter : MonoBehaviour {
 
-    private static int health = 0;
+    private static int health = 25;
     private static int defense = 10;
     private static int attack = 12;
 

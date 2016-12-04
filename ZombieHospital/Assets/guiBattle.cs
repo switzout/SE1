@@ -18,6 +18,7 @@ class guiBattle : MonoBehaviour
     GameObject miniBossCam;
     GameObject bossCam;
     GameObject gunBossCam;
+    GameObject mainMenu;
 
     int damage;
     int newHealth;
@@ -147,6 +148,7 @@ class guiBattle : MonoBehaviour
         miniBossCam = GameObject.Find("MiniBossCam");
         bossCam = GameObject.Find("BossCam");
         gunBossCam = GameObject.Find("GunBossCam");
+        mainMenu = GameObject.Find("TitleCam");
     }
 
     void Update()
@@ -169,9 +171,24 @@ class guiBattle : MonoBehaviour
                 showText = true;
             }
         }
+        
+        if(PlayerCharacter.getHealth() <= 0)
+        {
+            cams[1].enabled = false;
+            cams[0].enabled = true;
+            cams[0].depth = Camera.main.depth + 1;
+            
+            cams[0].transform.position = mainMenu.transform.position;
+            showText = false;
+            showMiniBossText = false;
+            showBossText = false;
+            Monster.setHealth(10);
+            SecurityCharacter.setHealth(20);
+            BossCharacter.setHealth(30);
+        }
 
 
-        if (Monster.getHealth() == 0 && showText)
+        if (Monster.getHealth() <= 0 && showText)
         {
 
             cams[1].enabled = false;
@@ -184,7 +201,7 @@ class guiBattle : MonoBehaviour
             PlayerCharacter.setHealth(10);
             pcHealth = "Player Health: " + PlayerCharacter.getHealth();
         }
-        else if(SecurityCharacter.getHealth() == 0 && showMiniBossText)
+        else if(SecurityCharacter.getHealth() <= 0 && showMiniBossText)
         {
             cams[1].enabled = false;
             cams[0].enabled = true;
@@ -194,7 +211,7 @@ class guiBattle : MonoBehaviour
             PlayerCharacter.setHealth(10);
             pcHealth = "Player Health: " + PlayerCharacter.getHealth();
         }
-        else if(BossCharacter.getHealth() == 0 && showBossText)
+        else if(BossCharacter.getHealth() <= 0 && showBossText)
         {
             cams[1].enabled = false;
             cams[0].enabled = true;
