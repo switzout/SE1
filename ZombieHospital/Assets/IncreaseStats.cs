@@ -27,6 +27,31 @@ public class IncreaseStats : MonoBehaviour {
     Rect healthRect = new Rect(Screen.width - 690, Screen.height - 630, 100, 90);
     Rect defRect = new Rect(Screen.width - 690, Screen.height - 330, 100, 90);
 
+    public void increaseHealth()
+    {
+        PlayerCharacter.setMaxHealth((PlayerCharacter.getMaxHealth() + 1));
+        PlayerCharacter.setHealth(PlayerCharacter.getMaxHealth());
+        health = "" + PlayerCharacter.getMaxHealth();
+        points--;
+        textPoints = "" + points;
+    }
+
+    public void increaseAttack()
+    {
+        PlayerCharacter.setAttack(PlayerCharacter.getAttack() + 1);
+        attack = "" + PlayerCharacter.getAttack();
+        points--;
+        textPoints = "" + points;
+    }
+
+    public void increaseDefense()
+    {
+        PlayerCharacter.setDefense(PlayerCharacter.getDefense() + 1);
+        defense = "" + PlayerCharacter.getDefense();
+        points--;
+        textPoints = "" + points;
+    }
+
     // Use this for initialization
     void Start () {
         points = 0;
@@ -78,25 +103,15 @@ public class IncreaseStats : MonoBehaviour {
 
             if (GUI.Button(healthRect, "+", buttonStyle))
             {
-                PlayerCharacter.setMaxHealth((PlayerCharacter.getMaxHealth() + 1));
-                PlayerCharacter.setHealth(PlayerCharacter.getMaxHealth());
-                health = "" + PlayerCharacter.getMaxHealth();
-                points--;
-                textPoints = "" + points;
+                increaseHealth();
             }
             if (GUI.Button(attackRect, "+", buttonStyle))
             {
-                PlayerCharacter.setAttack(PlayerCharacter.getAttack() + 1);
-                attack = "" + PlayerCharacter.getAttack();
-                points--;
-                textPoints = "" + points;
+                increaseAttack();
             }
             if (GUI.Button(defRect, "+", buttonStyle))
             {
-                PlayerCharacter.setDefense(PlayerCharacter.getDefense() + 1);
-                defense = "" + PlayerCharacter.getDefense();
-                points--;
-                textPoints = "" + points;
+                increaseDefense();
             }
         }
     }
